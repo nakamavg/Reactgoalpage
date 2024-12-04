@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/patatas/static/js/main.2451f15a.js",
-    "index.html": "/patatas/index.html",
-    "main.2451f15a.js.map": "/patatas/static/js/main.2451f15a.js.map"
+    "main.js": "/Reactgoalpage/static/js/main.2451f15a.js",
+    "index.html": "/Reactgoalpage/index.html",
+    "main.2451f15a.js.map": "/Reactgoalpage/static/js/main.2451f15a.js.map"
   },
   "entrypoints": [
     "static/js/main.2451f15a.js"
