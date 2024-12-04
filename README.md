@@ -15,3 +15,25 @@
  ```jsx
     setInput(e.target.value);
  ```
+
+ - Pequeña correcion en el caso de que sea vacio mande alerta al usuario y añadir al div que contiene la app que detecte enter
+ ```jsx
+  const setGoal = () => {
+    if (!input  || input.trim() === '') {
+      return alert('Por favor, escribe un objetivo');
+    }
+    setGoals([...goals, input]);
+    setInput('');
+  }
+ ```
+ ```html
+    <div className="app" style={styles.container} onKeyDown={detectEnter}>
+
+ ```
+ ```jsx
+  const detectEnter = (e) => {
+    if (e.key === 'Enter') {
+      setGoal();
+    }
+  }
+ ```

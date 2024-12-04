@@ -3,8 +3,15 @@ import React, { useState } from "react";
 function App() {
   const [goals, setGoals] = useState([]);
   const [input, setInput] = useState("");
-
+  const detectEnter = (e) => {
+    if (e.key === 'Enter') {
+      setGoal();
+    }
+  }
   const setGoal = () => {
+    if (!input  || input.trim() === '') {
+      return alert('Por favor, escribe un objetivo');
+    }
     setGoals([...goals, input]);
     setInput('');
   }
@@ -20,7 +27,7 @@ function App() {
   }
 
   return (
-    <div className="app" style={styles.container}>
+    <div className="app" style={styles.container} onKeyDown={detectEnter}>
       <h1 style={styles.title}>MI GOAL APP</h1> 
       <div className="add-goal" style={styles.addGoal}>
         <input value={input} onChange={inputChange} style={styles.input} type="text" placeholder="Escribir objetivo" />
