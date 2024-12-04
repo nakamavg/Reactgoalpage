@@ -1,5 +1,5 @@
 # Goal List react
-
+- puedes ver la pagina [aqui](https://nakamavg.github.io/Reactgoalpage/)
 ### Manejo del estado
 - Importar useState de react
 ```jsx
